@@ -21,6 +21,10 @@ const trackerHeaders = {
   'Cache-Control': 'public, max-age=86400, must-revalidate',
 };
 
+const robotsHeaders = {
+  'X-Robots-Tag': 'noindex, nofollow, noarchive, nosnippet, noimageindex',
+};
+
 function customCollectEndpoint(request: NextRequest) {
   const collectEndpoint = process.env.COLLECT_API_ENDPOINT;
 
@@ -29,7 +33,7 @@ function customCollectEndpoint(request: NextRequest) {
 
     if (url.pathname.endsWith(collectEndpoint)) {
       url.pathname = COLLECT_PATH;
-      return NextResponse.rewrite(url, { headers: apiHeaders });
+      return NextResponse.rewrite(url, { headers: { ...apiHeaders, ...robotsHeaders } });
     }
   }
 }
@@ -43,7 +47,7 @@ function customScriptName(request: NextRequest) {
 
     if (names.find(name => url.pathname.endsWith(name))) {
       url.pathname = TRACKER_PATH;
-      return NextResponse.rewrite(url, { headers: trackerHeaders });
+      return NextResponse.rewrite(url, { headers: { ...trackerHeaders, ...robotsHeaders } });
     }
   }
 }
@@ -52,7 +56,7 @@ function customScriptUrl(request: NextRequest) {
   const scriptUrl = process.env.TRACKER_SCRIPT_URL;
 
   if (scriptUrl && request.nextUrl.pathname.endsWith(TRACKER_PATH)) {
-    return NextResponse.rewrite(scriptUrl, { headers: trackerHeaders });
+    return NextResponse.rewrite(scriptUrl, { headers: { ...trackerHeaders, ...robotsHeaders } });
   }
 }
 
@@ -74,5 +78,7 @@ export default function middleware(req: NextRequest) {
     }
   }
 
-  return NextResponse.next();
+  const res = NextResponse.next();
+  res.headers.set('X-Robots-Tag', robotsHeaders['X-Robots-Tag']);
+  return res;
 }

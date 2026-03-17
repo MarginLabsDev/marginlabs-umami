@@ -29,6 +29,10 @@ const defaultHeaders = [
     value: 'on',
   },
   {
+    key: 'X-Robots-Tag',
+    value: 'noindex, nofollow, noarchive, nosnippet, noimageindex',
+  },
+  {
     key: 'Content-Security-Policy',
     value: contentSecurityPolicy.replace(/\s{2,}/g, ' ').trim(),
   },

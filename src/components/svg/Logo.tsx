@@ -5,13 +5,25 @@ const SvgLogo = (props: SVGProps<SVGSVGElement>) => (
     xmlns="http://www.w3.org/2000/svg"
     width={20}
     height={20}
-    fill="currentColor"
-    stroke="currentColor"
-    viewBox="0 0 428 389.11"
+    viewBox="0 0 8334 8334"
     {...props}
   >
-    <circle cx={214.15} cy={181} r={171} fill="none" strokeMiterlimit={10} strokeWidth={20} />
-    <path d="M413 134.11H15.29a15 15 0 0 0-15 15v15.3C.12 168 0 171.52 0 175.11c0 118.19 95.81 214 214 214 116.4 0 211.1-92.94 213.93-208.67 0-.44.07-.88.07-1.33v-30a15 15 0 0 0-15-15Z" />
+    <path
+      d="M3250.3,5155.45l-919.766,919.712l-0,-1151.49l343.548,-343.795l576.218,575.572Z"
+      fill="currentColor"
+    />
+    <path
+      d="M6822.26,2267.54l0,2990.97l-810.706,810.627l0,-1147.36l-6.028,-6.033l-0,-675.928l-1834.48,1832.34l-0,-1154.51l-0.554,-0.554l2651.77,-2649.55Z"
+      fill="currentColor"
+    />
+    <path
+      d="M2330.54,6075.16l-818.005,-818.084l0,-2995.96l2658.51,2656.53l-0,1154.51l-1.507,1.505l-1839,-1836.94l-0,1838.45Z"
+      fill="currentColor"
+    />
+    <path
+      d="M5090.33,5153.94l577.171,-576.498l344.053,344.33l0,1147.36l-3.014,3.014l-918.21,-918.21Z"
+      fill="currentColor"
+    />
   </svg>
 );
 export default SvgLogo;
