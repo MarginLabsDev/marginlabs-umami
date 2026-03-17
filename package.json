@@ -1,13 +1,13 @@
 {
-  "name": "umami",
+  "name": "marginlabs-pulse",
   "version": "3.0.3",
-  "description": "A modern, privacy-focused alternative to Google Analytics.",
-  "author": "Umami Software, Inc. <hello@umami.is>",
+  "description": "MarginLabs Pulse — a modern, privacy-focused alternative to Google Analytics.",
+  "author": "MarginLabs <hello@marginlabs.com>",
   "license": "MIT",
-  "homepage": "https://umami.is",
+  "homepage": "https://marginlabs.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/umami-software/umami.git"
+    "url": "https://github.com/marginlabs/marginlabs-pulse.git"
   },
   "type": "module",
   "scripts": {

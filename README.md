@@ -1,25 +1,22 @@
 <p align="center">
-  <img src="https://content.umami.is/website/images/umami-logo.png" alt="Umami Logo" width="100">
+  <img src="public/marginlabs-favicon.svg" alt="MarginLabs Pulse" width="100">
 </p>
 
-<h1 align="center">Umami</h1>
+<h1 align="center">MarginLabs Pulse</h1>
 
 <p align="center">
-  <i>Umami is a simple, fast, privacy-focused alternative to Google Analytics.</i>
+  <i>MarginLabs Pulse is a simple, fast, privacy-focused alternative to Google Analytics.</i>
 </p>
 
 <p align="center">
-  <a href="https://github.com/umami-software/umami/releases"><img src="https://img.shields.io/github/release/umami-software/umami.svg" alt="GitHub Release" /></a>
-  <a href="https://github.com/umami-software/umami/blob/master/LICENSE"><img src="https://img.shields.io/github/license/umami-software/umami.svg" alt="MIT License" /></a>
-  <a href="https://github.com/umami-software/umami/actions"><img src="https://img.shields.io/github/actions/workflow/status/umami-software/umami/ci.yml" alt="Build Status" /></a>
-  <a href="https://analytics.umami.is/share/LGazGOecbDtaIwDr/umami.is" style="text-decoration: none;"><img src="https://img.shields.io/badge/Try%20Demo%20Now-Click%20Here-brightgreen" alt="Umami Demo" /></a>
+  <a href="https://marginlabs.com"><img src="https://img.shields.io/badge/MarginLabs-Pulse-blue" alt="MarginLabs Pulse" /></a>
 </p>
 
 ---
 
 ## 🚀 Getting Started
 
-A detailed getting started guide can be found at [umami.is/docs](https://umami.is/docs/).
+A detailed getting started guide can be found at [marginlabs.com](https://marginlabs.com/).
 
 ---
 
@@ -38,7 +35,7 @@ cd umami
 pnpm install
 ```
 
-### Configure Umami
+### Configure MarginLabs Pulse
 
 Create an `.env` file with the following:
 
@@ -72,7 +69,7 @@ By default, this will launch the application on `http://localhost:3000`. You wil
 
 ## 🐳 Installing with Docker
 
-Umami provides Docker images as well as a Docker compose file for easy deployment.
+MarginLabs Pulse provides Docker images as well as a Docker compose file for easy deployment.
 
 Docker image:
 
@@ -80,7 +77,7 @@ Docker image:
 docker pull docker.umami.is/umami-software/umami:latest
 ```
 
-Docker compose (Runs Umami with a PostgreSQL database):
+Docker compose (Runs MarginLabs Pulse with a PostgreSQL database):
 
 ```bash
 docker compose up -d
